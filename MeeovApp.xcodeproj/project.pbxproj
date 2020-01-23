@@ -13,6 +13,7 @@
 		006C91FD23DA413D001667A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006C91FB23DA413D001667A5 /* Main.storyboard */; };
 		006C91FF23DA4140001667A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006C91FE23DA4140001667A5 /* Assets.xcassets */; };
 		006C920223DA4140001667A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006C920023DA4140001667A5 /* LaunchScreen.storyboard */; };
+		006C920B23DA4E01001667A5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C920A23DA4E01001667A5 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		006C91FE23DA4140001667A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		006C920123DA4140001667A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		006C920323DA4140001667A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006C920A23DA4E01001667A5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006C920B23DA4E01001667A5 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				006C91F423DA413D001667A5 /* MeeovApp */,
 				006C91F323DA413D001667A5 /* Products */,
+				006C920923DA4E00001667A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				006C920323DA4140001667A5 /* Info.plist */,
 			);
 			path = MeeovApp;
+			sourceTree = "<group>";
+		};
+		006C920923DA4E00001667A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006C920A23DA4E01001667A5 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
