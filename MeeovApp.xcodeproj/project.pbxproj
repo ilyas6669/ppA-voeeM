@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		006C91FF23DA4140001667A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006C91FE23DA4140001667A5 /* Assets.xcassets */; };
 		006C920223DA4140001667A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006C920023DA4140001667A5 /* LaunchScreen.storyboard */; };
 		006C920B23DA4E01001667A5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C920A23DA4E01001667A5 /* WebKit.framework */; };
+		00D47BD623DAE73200A6912B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00D47BD523DAE73100A6912B /* GoogleService-Info.plist */; };
+		DEE27B525130A1AEFE60186A /* Pods_MeeovApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFBC956FBF858C89ED01CFE /* Pods_MeeovApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		006C920123DA4140001667A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		006C920323DA4140001667A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006C920A23DA4E01001667A5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		00D47BD523DAE73100A6912B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00D47BD723DAF0E900A6912B /* MeeovApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeeovApp.entitlements; sourceTree = "<group>"; };
+		37021A0E75447B11A59A67CB /* Pods-MeeovApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeeovApp.release.xcconfig"; path = "Target Support Files/Pods-MeeovApp/Pods-MeeovApp.release.xcconfig"; sourceTree = "<group>"; };
+		4AFBC956FBF858C89ED01CFE /* Pods_MeeovApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeeovApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7115FC623155660BA8B17F0A /* Pods-MeeovApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeeovApp.debug.xcconfig"; path = "Target Support Files/Pods-MeeovApp/Pods-MeeovApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006C920B23DA4E01001667A5 /* WebKit.framework in Frameworks */,
+				DEE27B525130A1AEFE60186A /* Pods_MeeovApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +54,7 @@
 				006C91F423DA413D001667A5 /* MeeovApp */,
 				006C91F323DA413D001667A5 /* Products */,
 				006C920923DA4E00001667A5 /* Frameworks */,
+				9ADE834A43D140AD4D653B75 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +69,7 @@
 		006C91F423DA413D001667A5 /* MeeovApp */ = {
 			isa = PBXGroup;
 			children = (
+				00D47BD723DAF0E900A6912B /* MeeovApp.entitlements */,
 				006C91F523DA413D001667A5 /* AppDelegate.swift */,
 				006C91F723DA413D001667A5 /* SceneDelegate.swift */,
 				006C91F923DA413D001667A5 /* ViewController.swift */,
@@ -67,6 +77,7 @@
 				006C91FE23DA4140001667A5 /* Assets.xcassets */,
 				006C920023DA4140001667A5 /* LaunchScreen.storyboard */,
 				006C920323DA4140001667A5 /* Info.plist */,
+				00D47BD523DAE73100A6912B /* GoogleService-Info.plist */,
 			);
 			path = MeeovApp;
 			sourceTree = "<group>";
@@ -75,8 +86,18 @@
 			isa = PBXGroup;
 			children = (
 				006C920A23DA4E01001667A5 /* WebKit.framework */,
+				4AFBC956FBF858C89ED01CFE /* Pods_MeeovApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ADE834A43D140AD4D653B75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7115FC623155660BA8B17F0A /* Pods-MeeovApp.debug.xcconfig */,
+				37021A0E75447B11A59A67CB /* Pods-MeeovApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 006C920623DA4140001667A5 /* Build configuration list for PBXNativeTarget "MeeovApp" */;
 			buildPhases = (
+				1C48BFCE3A02A956B183DC2B /* [CP] Check Pods Manifest.lock */,
 				006C91EE23DA413D001667A5 /* Sources */,
 				006C91EF23DA413D001667A5 /* Frameworks */,
 				006C91F023DA413D001667A5 /* Resources */,
+				8469BB0C0276B8D3E525574D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,12 +161,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				006C920223DA4140001667A5 /* LaunchScreen.storyboard in Resources */,
+				00D47BD623DAE73200A6912B /* GoogleService-Info.plist in Resources */,
 				006C91FF23DA4140001667A5 /* Assets.xcassets in Resources */,
 				006C91FD23DA413D001667A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C48BFCE3A02A956B183DC2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeeovApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8469BB0C0276B8D3E525574D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeeovApp/Pods-MeeovApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeeovApp/Pods-MeeovApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeeovApp/Pods-MeeovApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		006C91EE23DA413D001667A5 /* Sources */ = {
@@ -294,8 +360,10 @@
 		};
 		006C920723DA4140001667A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7115FC623155660BA8B17F0A /* Pods-MeeovApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeeovApp/MeeovApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MeeovApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,8 +379,10 @@
 		};
 		006C920823DA4140001667A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37021A0E75447B11A59A67CB /* Pods-MeeovApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeeovApp/MeeovApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MeeovApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
